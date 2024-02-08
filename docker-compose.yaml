@@ -1,5 +1,5 @@
 services:
-  booking_reservations:
+  reservations:
     build:
       context: .
       dockerfile: ./apps/reservations/Dockerfile
