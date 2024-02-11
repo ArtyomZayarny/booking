@@ -29,7 +29,10 @@ export class PaymentsService {
     });
 
     //Add notification
-    this.notificationService.emit('notify_email', { email });
+    this.notificationService.emit('notify_email', {
+      email,
+      text: `Your payment of $${amount} completed successfully`,
+    });
 
     return paymentsIntent;
   }
